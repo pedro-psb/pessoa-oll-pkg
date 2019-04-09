@@ -1,0 +1,154 @@
+lalily-templates V 0.0.1 @ 30.03.2019 00:19:26
+Registry: ---
+[registry] lalily/runtime/logfile-written: mwe - multiple books.lalily.log
+[registry] lalily/store/path-variables/$EMPTY: ()
+[registry] lalily/store/path-variables/$LOCAL: ()
+[registry] lalily/store/path-variables/$UP: (..)
+
+Templates: ---
+[template] generic: *
+[template] group: *
+[template] init/Voice: *
+[template] init/Voice/vocal: *
+[template] lalily/instrument: *
+[template] lalily/instrument/cello: *
+[template] lalily/instrument/Continuo: *
+[template] lalily/instrument/english-horn: *
+[template] lalily/instrument/flute: *
+[template] lalily/instrument/generic: *
+[template] lalily/instrument/group: *
+[template] lalily/instrument/oboe: *
+[template] lalily/instrument/sax/alt: *
+[template] lalily/instrument/sax/bar: *
+[template] lalily/instrument/sax/sop: *
+[template] lalily/instrument/sax/ten: *
+[template] lalily/instrument/trombone: *
+[template] lalily/instrument/trumpet: *
+[template] lalily/instrument/tuba: *
+[template] lalily/instrument/viola: *
+[template] lalily/instrument/violin: *
+[template] lalily/mirror: *
+[template] lalily/piano: *
+[template] lalily/vocal: *
+[template] lalily/vocal/group: *
+[template] lalily/vocal/lyrics: *
+[template] lalily/vocal/voice: *
+[template] NOTFOUND: *
+[template] test/continuo: *
+[template] transpose: *
+
+Template reference: ---
+[Template] group
+[template-ref] lalily/vocal: template
+[template-ref] test/continuo: template
+
+[Template] init/Voice
+[template-ref] init-vocal: deep-optional
+[template-ref] initVoice: optional
+
+[Template] init/Voice/vocal
+[template-ref] init/Voice: template
+
+[Template] lalily/vocal
+[template-ref] lalily/vocal/lyrics: template
+[template-ref] lalily/vocal/voice: template
+
+[Template] lalily/vocal/lyrics
+[template-ref] lyrics: need
+
+[Template] lalily/vocal/voice
+[template-ref] composer/mass/agnusdei/voice: optional
+[template-ref] composer/mass/credo/voice: optional
+[template-ref] composer/mass/gloria/voice: optional
+[template-ref] composer/mass/kyrie/voice: optional
+[template-ref] composer/mass/sanctus/voice: optional
+[template-ref] init/Voice/vocal: template
+[template-ref] meta: deep
+
+[Template] test/continuo
+[template-ref] composer/mass/agnusdei/bass: need
+[template-ref] composer/mass/credo/bass: need
+[template-ref] composer/mass/gloria/bass: need
+[template-ref] composer/mass/kyrie/bass: need
+[template-ref] composer/mass/sanctus/bass: need
+[template-ref] general: optional
+[template-ref] meta: deep
+
+
+Musik: ---
+[music] composer/mass/agnusdei/bass: 1/4
+[music] composer/mass/agnusdei/meta: 1/1
+[music] composer/mass/agnusdei/voice: 1/4
+[music] composer/mass/agnusdei/voice/lyrics: 1/4
+[music] composer/mass/credo/bass: 1/4
+[music] composer/mass/credo/meta: 1/1
+[music] composer/mass/credo/voice: 1/4
+[music] composer/mass/credo/voice/lyrics: 1/4
+[music] composer/mass/gloria/bass: 1/4
+[music] composer/mass/gloria/meta: 1/1
+[music] composer/mass/gloria/voice: 1/4
+[music] composer/mass/gloria/voice/lyrics: 1/4
+[music] composer/mass/kyrie/bass: 1/4
+[music] composer/mass/kyrie/bass/general: 1/4
+[music] composer/mass/kyrie/meta: 1/1
+[music] composer/mass/kyrie/voice: 1/4
+[music] composer/mass/kyrie/voice/lyrics: 1/4
+[music] composer/mass/sanctus/bass: 1/4
+[music] composer/mass/sanctus/meta: 1/1
+[music] composer/mass/sanctus/voice: 1/4
+[music] composer/mass/sanctus/voice/lyrics: 1/4
+
+Musik Default: ---
+[defaults] composer/mass/agnusdei: [group]
+  _header
+   title=agnusdei
+  bass
+   _template=(test continuo)
+  voice
+   vocname=Voice
+   _template=(lalily vocal)
+  _order=(voice bass)
+
+[defaults] composer/mass/credo: [group]
+  _header
+   title=credo
+  bass
+   _template=(test continuo)
+  voice
+   vocname=Voice
+   _template=(lalily vocal)
+  _order=(voice bass)
+
+[defaults] composer/mass/gloria: [group]
+  _header
+   title=gloria
+  bass
+   _template=(test continuo)
+  voice
+   vocname=Voice
+   _template=(lalily vocal)
+  _order=(voice bass)
+
+[defaults] composer/mass/kyrie: [group]
+  _header
+   title=kyrie
+  bass
+   _template=(test continuo)
+  voice
+   vocname=Voice
+   _template=(lalily vocal)
+  _order=(voice bass)
+
+[defaults] composer/mass/sanctus: [group]
+  _header
+   title=sanctus
+  bass
+   _template=(test continuo)
+  voice
+   vocname=Voice
+   _template=(lalily vocal)
+  _order=(voice bass)
+
+
+Musik Quotes: ---
+

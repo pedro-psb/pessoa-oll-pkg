@@ -1,0 +1,21 @@
+#
+# openLilyLib/local configuration
+#
+
+name: pessoa-pkg
+display-name: Pedro Pessoa's Local Package
+short-description: Personal Library
+description: <
+  Personal library and toolset for local use.
+  >
+modules: [
+  foo
+  ]
+oll-core: 0.5.0
+maintainers: [
+  Pedro Pessoa <pedropsb95@gmail.com>
+  ]
+version: 0.0.0
+license: GPL3
+website: https://github.com/foo/local
+repository: https://github.com/foo/local.git
