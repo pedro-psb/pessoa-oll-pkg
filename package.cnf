@@ -2,7 +2,7 @@
 # openLilyLib/local configuration
 #
 
-name: pessoa-pkg
+name: pessoa-oll-pkg
 display-name: Pedro Pessoa's Local Package
 short-description: Personal Library
 description: <
