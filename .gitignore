@@ -2,3 +2,5 @@
 *.pdf
 *.mid
 *.midi
+.sandbox/
+.trash/
