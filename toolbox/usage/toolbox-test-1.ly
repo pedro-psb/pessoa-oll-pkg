@@ -1,11 +1,13 @@
 \version "2.19.82"
 \include "oll-core/package.ily"
-\loadModule local.definitions.note-names.manden
-\loadModule local.definitions.drum-styles.manden
+\loadModule pessoa-oll-pkg.toolbox.note-names.manden
+\loadModule pessoa-oll-pkg.toolbox.drum-styles.manden
+
 %{
 drumNames = \getStyleOpt manden-default.melodia
 #(display-scheme-music drumNames)
 %}
+
 global = {
   \key c \major
   \time 4/4
