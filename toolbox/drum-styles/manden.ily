@@ -1,12 +1,12 @@
 \version "2.19.82"
-drum-style-name = manden
+drum-style-root = manden
 % Why I need this?
 % drum-style-root = local.definitions.drum-styles
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%	Style-Defs	%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-% drum-style		alist used inside "\new Drumstaff \with { }"
+% drum-style	alist used inside "\new Drumstaff \with { }"
 % staff-line	override used in ???
 
 \registerOption \drum-style-root.manden-default.melodia
